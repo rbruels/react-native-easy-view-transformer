@@ -522,6 +522,7 @@ export default class ViewTransformer extends React.Component {
         Animated.timing(
             this.state.animator,
             {
+                useNativeDriver: true,
                 toValue: 1,
                 duration: duration,
                 easing: Easing.inOut(Easing.ease)
